@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -4774,22 +4774,12 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="50.8" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
 <label x="40.64" y="60.96" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="72.39" y1="158.75" x2="72.39" y2="166.37" width="0.1524" layer="91"/>
-<label x="72.39" y="161.29" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="SDA1" class="0">
 <segment>
 <pinref part="PORT1" gate="G$1" pin="6_SDA_BLUE"/>
 <wire x1="50.8" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <label x="40.64" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="74.93" y1="158.75" x2="74.93" y2="166.37" width="0.1524" layer="91"/>
-<label x="74.93" y="161.29" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="IOIOAI2" class="0">
@@ -4820,22 +4810,12 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="106.68" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <label x="96.52" y="60.96" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="80.01" y1="158.75" x2="80.01" y2="166.37" width="0.1524" layer="91"/>
-<label x="80.01" y="161.29" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="SDA2" class="0">
 <segment>
 <pinref part="PORT2" gate="G$1" pin="6_SDA_BLUE"/>
 <wire x1="106.68" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
 <label x="96.52" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="82.55" y1="158.75" x2="82.55" y2="166.37" width="0.1524" layer="91"/>
-<label x="82.55" y="161.29" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SCL3" class="0">
@@ -5153,11 +5133,39 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <label x="69.85" y="161.29" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
+<net name="P5" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="6"/>
+<wire x1="72.39" y1="158.75" x2="72.39" y2="166.37" width="0.1524" layer="91"/>
+<label x="72.39" y="161.29" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="P4" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="5"/>
+<wire x1="74.93" y1="158.75" x2="74.93" y2="166.37" width="0.1524" layer="91"/>
+<label x="74.93" y="161.29" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
 <net name="P3" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="4"/>
 <wire x1="77.47" y1="158.75" x2="77.47" y2="166.37" width="0.1524" layer="91"/>
 <label x="77.47" y="161.29" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="P2" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="80.01" y1="158.75" x2="80.01" y2="166.37" width="0.1524" layer="91"/>
+<label x="80.01" y="161.29" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="P1" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="82.55" y1="158.75" x2="82.55" y2="166.37" width="0.1524" layer="91"/>
+<label x="82.55" y="161.29" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
